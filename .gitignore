@@ -3,3 +3,4 @@ build.py
 .DS_Store
 __pycache__/
 .gstack/
+_v2/
