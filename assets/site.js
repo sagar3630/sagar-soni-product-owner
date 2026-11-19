@@ -153,3 +153,86 @@
     b.addEventListener('pointerleave', function(){ inner.style.transform = ''; });
   });
 })();
+
+/* LYC gallery lightbox */
+(function(){
+  var dlg = document.querySelector('.lightbox');
+  if(!dlg || typeof dlg.showModal !== 'function') return;
+  var img = dlg.querySelector('img'), cap = dlg.querySelector('.lb-cap'), last = null;
+  document.querySelectorAll('[data-full]').forEach(function(b){
+    b.addEventListener('click', function(){
+      last = b; img.src = b.getAttribute('data-full'); img.alt = b.getAttribute('data-cap');
+      cap.textContent = b.getAttribute('data-cap'); dlg.showModal();
+    });
+  });
+  dlg.querySelector('.lb-x').addEventListener('click', function(){ dlg.close(); });
+  dlg.addEventListener('click', function(e){ if(e.target === dlg) dlg.close(); });
+  dlg.addEventListener('close', function(){ if(last) last.focus(); });
+})();
+
+/* Calls I made: filter by project (without JS every card shows) */
+(function(){
+  var grid = document.getElementById('dgrid');
+  var tabs = document.querySelectorAll('.dtab');
+  if(!grid || !tabs.length) return;
+  var cards = grid.querySelectorAll('.dcard');
+  function show(f){
+    grid.classList.add('filtered');
+    cards.forEach(function(c){
+      var on = f === 'featured' ? c.hasAttribute('data-f') : c.getAttribute('data-p') === f;
+      c.hidden = !on;
+      c.classList.remove('in');
+      if(on){ void c.offsetWidth; c.classList.add('in'); }
+    });
+    tabs.forEach(function(t){ t.setAttribute('aria-pressed', String(t.getAttribute('data-filter') === f)); });
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ show(t.getAttribute('data-filter')); }); });
+  show('featured');
+})();
+
+/* How it works: draw the flow when it scrolls into view */
+(function(){
+  var flows = document.querySelectorAll('.flow');
+  if(!flows.length) return;
+  if(!('IntersectionObserver' in window)){ flows.forEach(function(f){ f.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.25});
+  flows.forEach(function(f){ io.observe(f); });
+})();
+
+/* TaxVero product tour */
+(function(){
+  var btns = document.querySelectorAll('.tt-btn');
+  if(!btns.length) return;
+  var panes = document.querySelectorAll('.tt-pane');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var i = b.getAttribute('data-i');
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); });
+      panes.forEach(function(p){ p.classList.toggle('on', p.getAttribute('data-i') === i); });
+    });
+  });
+})();
+
+/* Love Ya figma flow: persona tabs */
+(function(){
+  var tabs = document.querySelectorAll('.fg-tab');
+  if(!tabs.length) return;
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var k = t.getAttribute('data-p');
+      tabs.forEach(function(x){ x.setAttribute('aria-pressed', String(x === t)); });
+      document.querySelectorAll('.fg-canvas').forEach(function(c){ c.classList.toggle('on', c.getAttribute('data-p') === k); });
+    });
+  });
+})();
+
+/* AI day: reveal on scroll */
+(function(){
+  var s = document.getElementById('ai');
+  if(!s) return;
+  if(!('IntersectionObserver' in window)){ s.classList.add('in'); return; }
+  var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ s.classList.add('in'); io.disconnect(); } }); }, {threshold:.15});
+  io.observe(s);
+})();

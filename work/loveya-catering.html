@@ -9,7 +9,7 @@
 <meta property="og:description" content="An Indigenous-owned marketplace where companies order catering from local kitchens, and every order helps fund First Nations communities.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230D9488'/%3E%3Cstop offset='1' stop-color='%234F46E5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%23fff'%3ESS%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Readex+Pro:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 <script>(function(d){var c=d.documentElement.classList;c.add('js');var s=/[?&]static\b/.test(location.search);if(s)c.add('static');if(!s&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))c.add('anim');})(document);</script>
 </head>
@@ -22,6 +22,7 @@
     <nav class="nav" id="nav" aria-label="Main">
       <a href="../index.html#work">Work</a>
       <a href="../index.html#decisions">Decisions</a>
+      <a href="../index.html#ai">AI</a>
       <a href="../index.html#experience">Experience</a>
       <a href="../index.html#books">Books</a>
       <a href="../assets/Sagar-Soni-Resume.pdf" target="_blank" rel="noopener">Resume<span class="sr"> (PDF, opens in a new tab)</span></a>
@@ -38,19 +39,23 @@
   <h1>Love Ya Catering</h1>
   <p class="case-line">An Indigenous-owned marketplace where companies order catering from local kitchens, and every order helps fund First Nations communities.</p>
   <dl class="facts"><div><dt>Role</dt><dd>Product Owner</dd></div><div><dt>Company</dt><dd>DianApps</dd></div><div><dt>Timeline</dt><dd>2025 to now</dd></div><div><dt>Market</dt><dd>Australia</dd></div></dl>
+  
 </div>
 
 <div class="wrap">
   <figure class="frame showcase" style="--c:var(--lyc);--soft:var(--lyc-soft)">
-    <div class="frame-stage"><div class="mock"><div class="panel ord" id="lycOrder">
-  <div class="ord-head"><div><div class="mtitle">Team lunch, 24 people</div><div class="msub">Thursday, 12:30 pm, Level 9 boardroom</div></div><span class="chip">Awaiting kitchen</span></div>
-  <ul class="ord-items"><li><span>Native pepperberry chicken wraps ×24</span><span>$312</span></li><li><span>Seasonal salad platter ×3</span><span>$135</span></li><li><span>Wattleseed brownies ×24</span><span>$96</span></li></ul>
-  <div class="track" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
-  <div class="track-l"><span class="on">Placed</span><span>Accepted</span><span>Preparing</span><span>Delivered</span></div>
-  <div class="give"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9z"/></svg><span>Part of this order goes to First Nations community programs.</span></div>
-  <button class="btn" type="button">Accept as restaurant</button>
-</div></div></div>
-    <figcaption><span class="illus-tag">Illustrative</span>Illustrative screen. Tap the button to move the order along.</figcaption>
+    <div class="frame-stage ly-stage"><div class="lyw big" role="img" aria-label="Love Ya homepage hero: Great Food, Delivered to You, with group orders and a mission to do good">
+  <span class="lyw-nav"><img src="../assets/lyc/site-logo.webp" alt="">Loveya</span>
+  <img class="lyw-plate pl1" src="../assets/lyc/site-hero-side-left.webp" alt="">
+  <img class="lyw-plate pl2" src="../assets/lyc/site-hero-side-right-top.webp" alt="">
+  <img class="lyw-plate pl3" src="../assets/lyc/site-hero-side-right-bottom.webp" alt="">
+  <span class="lyw-h"><span>Great Food,</span>Delivered to You</span>
+  <span class="lyw-search"><i></i>Deliver to<b>Browse Restaurants</b></span>
+  <span class="lyw-side s-l"><img src="../assets/lyc/site-hero-left.webp" alt=""><em>Group orders</em></span>
+  <span class="lyw-side s-r"><img src="../assets/lyc/site-hero-right.webp" alt=""><em>Eat good. Do good.</em></span>
+  <span class="lyw-center"><img src="../assets/lyc/site-hero-center.webp" alt=""></span>
+</div></div>
+    <figcaption><span class="illus-tag">From loveya.food</span>The live homepage hero. Screens from the Figma file are further down.</figcaption>
   </figure>
 </div>
 
@@ -60,36 +65,179 @@
     <p class="big">Office managers and procurement teams order catering for meetings and events. Partner restaurants accept and fulfil orders from their own app. An admin team approves partners, sets commission and handles refunds and payouts. The business was preparing for a beta, a controlled launch and a public launch at a national Indigenous business event.</p>
     <p class="muted">Customer web and app, restaurant app, admin. Built on Next.js, React Native and Django.</p>
   </section>
+
   <section id="numbers">
     <h2 class="label"><span class="grad">By the numbers</span></h2>
     <ul class="stats"><li><strong class="grad">112</strong><span>client audit findings triaged, 15 of them critical</span></li><li><strong class="grad">292</strong><span>checks on the go-live gate, signed off by 7 roles</span></li><li><strong class="grad">129 → 53</strong><span>analytics events, cut to what launch needs</span></li><li><strong class="grad">99</strong><span>acceptance test cases written and run</span></li></ul>
   </section>
   <section id="my-role">
     <h2 class="label"><span class="grad">My role as Product Owner</span></h2>
-    <ul class="po-role"><li><h3>Discovery and requirements</h3><p>Ran requirement sessions with the founder and turned business goals into user stories for ordering, group orders, merchant onboarding, admin operations and payments.</p></li><li><h3>Backlog and Scrum</h3><p>Owned and prioritised the backlog, planned sprints and ran the ceremonies: sprint planning, daily stand-ups, reviews and retrospectives.</p></li><li><h3>Design, development and QA</h3><p>Coordinated designers, web and mobile developers and QA across five surfaces, and turned their questions and findings into decisions.</p></li><li><h3>Acceptance</h3><p>Wrote acceptance criteria for every story, reviewed builds against them and ran UAT before sign-off.</p></li><li><h3>Stakeholders</h3><p>Product demos and status updates for the founder. Change requests were sized for scope, effort and timeline before they entered a sprint.</p></li></ul>
+    <ul class="po-role"><li><h3>Discovery and requirements</h3><p>Ran requirement sessions with the founder and turned business goals into user stories for ordering, group orders, merchant onboarding, admin operations and payments.</p></li><li><h3>Competitor research</h3><p>Studied the ordering flows in Uber Eats, Swiggy, Zomato, McDonald's and Kcal to benchmark group ordering, multi-restaurant carts, offers, tipping and bill summaries before designing our own.</p></li><li><h3>Ideation and UX flows</h3><p>Mapped every customer, restaurant and admin journey end to end, from browsing to the receipt and from accepting an order to dispatch, and ran feature brainstorms and design reviews across the Figma iterations to settle ordering, checkout and tracking.</p></li><li><h3>Backlog and Scrum</h3><p>Owned and prioritised the backlog, planned sprints and ran the ceremonies: sprint planning, daily stand-ups, reviews and retrospectives.</p></li><li><h3>Design, development and QA</h3><p>Coordinated designers, web and mobile developers and QA across five surfaces, and turned their questions and findings into decisions.</p></li><li><h3>Acceptance</h3><p>Wrote acceptance criteria for every story, reviewed builds against them and ran UAT before sign-off.</p></li><li><h3>Stakeholders</h3><p>Product demos and status updates for the founder. Change requests were sized for scope, effort and timeline before they entered a sprint.</p></li></ul>
   </section>
   <section id="role">
     <h2 class="label"><span class="grad">What I did</span></h2>
-    <ul class="did"><li><b>Owned product decisions end to end</b><span>Turned the founder's business goals into ordering workflows and the transactional core: cart, checkout, order acceptance, refunds and payouts.</span></li><li><b>Ran the go-live</b><span>A 292-check go/no-go checklist across 11 phases and all five surfaces (infrastructure, security, payments, store submissions, compliance and support) with sign-off from seven roles, plus the App Store and Play Store submissions.</span></li><li><b>Triaged the client's audit</b><span>112 findings across security, backend performance, Android and acceptance testing, ranked into one fix backlog ahead of go-live: 15 critical and 34 high.</span></li><li><b>Handled change requests</b><span>For example, letting each restaurant set its own delivery radius, which had been a fixed 15 km for everyone.</span></li><li><b>Designed the analytics plan</b><span>A 129-event Firebase plan across the customer, restaurant and admin apps, cut to 53 for launch, and a Google Analytics review that kept GA to the top of the funnel and left revenue figures to the database.</span></li><li><b>Specified the money flows</b><span>Stripe Connect payouts, refunds with fault attribution and GST, and Stripe-to-Xero reconciliation, so payouts, refunds and fees match the books.</span></li><li><b>Ran a POS market analysis</b><span>Compared five Australian POS vendors to set the order of the integration roadmap.</span></li><li><b>Tested before sign-off</b><span>Wrote and ran 99 acceptance test cases on the customer web app and logged 16 defects and 9 blockers back to the team.</span></li><li><b>Kept the roadmap moving</b><span>When the client was unavailable for about a month after Phase 1, I kept ownership, prioritised the next enhancements and got them approved as a change request.</span></li><li><b>Sped up merchant onboarding</b><span>A bulk menu-upload template and clearer sign-up steps for restaurants.</span></li></ul>
+    <ul class="did"><li><b>Owned product decisions end to end</b><span>Turned the founder's business goals into ordering workflows and the transactional core: cart, checkout, order acceptance, refunds and payouts.</span></li><li><b>Shaped the corporate ordering features</b><span>Group orders where the organiser invites the team and sets a budget per person and a deadline, scheduled delivery, and one cart across several restaurants. All three are live on loveya.food.</span></li><li><b>Ran the go-live</b><span>A 292-check go/no-go checklist across 11 phases and all five surfaces (infrastructure, security, payments, store submissions, compliance and support) with sign-off from seven roles, plus the App Store and Play Store submissions.</span></li><li><b>Triaged the client's audit</b><span>112 findings across security, backend performance, Android and acceptance testing, ranked into one fix backlog ahead of go-live: 15 critical and 34 high.</span></li><li><b>Handled change requests</b><span>For example, letting each restaurant set its own delivery radius, which had been a fixed 15 km for everyone.</span></li><li><b>Designed the analytics plan</b><span>A 129-event Firebase plan across the customer, restaurant and admin apps, cut to 53 for launch, and a Google Analytics review that kept GA to the top of the funnel and left revenue figures to the database.</span></li><li><b>Specified the money flows</b><span>Stripe Connect payouts, refunds with fault attribution and GST, and Stripe-to-Xero reconciliation, so payouts, refunds and fees match the books.</span></li><li><b>Ran a POS market analysis</b><span>Compared five Australian POS vendors to set the order of the integration roadmap.</span></li><li><b>Tested before sign-off</b><span>Wrote and ran 99 acceptance test cases on the customer web app and logged 16 defects and 9 blockers back to the team.</span></li><li><b>Wrote the go-to-market plan</b><span>A four-phase go-to-market and marketing plan for the launch.</span></li><li><b>Kept the roadmap moving</b><span>When the client was unavailable for about a month after Phase 1, I kept ownership, prioritised the next enhancements and got them approved as a change request.</span></li><li><b>Sped up merchant onboarding</b><span>A bulk menu-upload template and clearer sign-up steps for restaurants.</span></li></ul>
+  </section>
+
+  <section id="flow" class="flow flow-figma">
+    <h2 class="label"><span class="grad">How it works</span></h2>
+    <p class="fl-title">Three apps, one order</p>
+    <p class="fl-lede">Customers and restaurants each have a mobile app and a web app, and the admin team runs a web panel. These are the real screens from the Figma file, wired the way the prototype connects them. <span class="fl-key"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg>marks a step one of my calls shaped.</span></p>
+    <div class="fg-tabs" role="group" aria-label="Choose a persona"><button type="button" class="fg-tab" data-p="customer" aria-pressed="true">Customer app <span>11 screens</span></button><button type="button" class="fg-tab" data-p="restaurant" aria-pressed="false">Restaurant app <span>9 screens</span></button><button type="button" class="fg-tab" data-p="admin" aria-pressed="false">Admin panel <span>7 screens</span></button></div>
+    <div class="fg-wrap"><div class="fg-chrome" aria-hidden="true"><span class="fg-dots"><i></i><i></i><i></i></span><span class="fg-file">LYC.fig &mdash; Prototype</span><span class="fg-hint">Scroll sideways &rarr;</span></div><div class="fg-canvas on" data-p="customer" tabindex="0" aria-label="Customer app flow, scroll sideways">
+          <div class="fg-board" style="width:2966px;height:644px">
+            <svg class="fg-wires" width="2966" height="644" aria-hidden="true"><defs><marker id="fgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0D99FF"/></marker></defs><circle cx="192" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M192,272.4 C252,272.4 244,273.20000000000005 304,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="458" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M458,328.4 C518,328.4 510,217.20000000000002 570,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="724" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M724,272.4 C784,272.4 776,273.20000000000005 836,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="990" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M990,328.4 C1050,328.4 1042,217.20000000000002 1102,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="1256" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1256,272.4 C1316,272.4 1308,273.20000000000005 1368,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="1522" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1522,328.4 C1582,328.4 1574,217.20000000000002 1634,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="1788" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1788,272.4 C1848,272.4 1840,273.20000000000005 1900,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="2054" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M2054,328.4 C2114,328.4 2106,217.20000000000002 2166,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="2320" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M2320,272.4 C2380,272.4 2372,273.20000000000005 2432,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="2586" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M2586,328.4 C2646,328.4 2638,217.20000000000002 2698,217.20000000000002" marker-end="url(#fgArrow)"/></svg>
+            <ol class="fg-frames"><li class="fg-frame" style="left:40px;top:70px;width:170px">
+            <span class="fg-start" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 2l7 4-7 4z"/></svg>Flow starting point</span><span class="fg-name">01 &middot; Open the app</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-01.webp" data-cap="Customer app: Open the app. Loveya: eat good, do good." style="height:368px"><img src="../assets/lyc/flow-customer-01.webp" alt="Customer app, step 1: Open the app" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Loveya: eat good, do good.</p></li><li class="fg-frame" style="left:306px;top:126px;width:170px">
+            <span class="fg-name">02 &middot; See what it does</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-02.webp" data-cap="Customer app: See what it does. Order as a group, pay together." style="height:368px"><img src="../assets/lyc/flow-customer-02.webp" alt="Customer app, step 2: See what it does" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Order as a group, pay together.</p></li><li class="fg-frame" style="left:572px;top:70px;width:170px">
+            <span class="fg-name">03 &middot; Sign up</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-03.webp" data-cap="Customer app: Sign up. Name, phone and email, verified by code." style="height:368px"><img src="../assets/lyc/flow-customer-03.webp" alt="Customer app, step 3: Sign up" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Name, phone and email, verified by code.</p></li><li class="fg-frame" style="left:838px;top:126px;width:170px">
+            <span class="fg-name">04 &middot; Set the address</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-04.webp" data-cap="Customer app: Set the address. So only restaurants that deliver there show up." style="height:368px"><img src="../assets/lyc/flow-customer-04.webp" alt="Customer app, step 4: Set the address" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">So only restaurants that deliver there show up.</p></li><li class="fg-frame" style="left:1104px;top:70px;width:170px">
+            <span class="fg-name">05 &middot; Browse</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-05.webp" data-cap="Customer app: Browse. Offers, categories, top picks and filters." style="height:368px"><img src="../assets/lyc/flow-customer-05.webp" alt="Customer app, step 5: Browse" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Offers, categories, top picks and filters.</p></li><li class="fg-frame" style="left:1370px;top:126px;width:170px">
+            <span class="fg-name">06 &middot; Open a restaurant</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-06.webp" data-cap="Customer app: Open a restaurant. The menu, with dietary tags and sorting." style="height:368px"><img src="../assets/lyc/flow-customer-06.webp" alt="Customer app, step 6: Open a restaurant" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">The menu, with dietary tags and sorting.</p></li><li class="fg-frame" style="left:1636px;top:70px;width:170px">
+            <span class="fg-name">07 &middot; Customise a dish</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-07.webp" data-cap="Customer app: Customise a dish. Size, spice level and add-ons." style="height:368px"><img src="../assets/lyc/flow-customer-07.webp" alt="Customer app, step 7: Customise a dish" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Size, spice level and add-ons.</p></li><li class="fg-frame" style="left:1902px;top:126px;width:170px">
+            <span class="fg-name">08 &middot; Add to cart</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-08.webp" data-cap="Customer app: Add to cart. The cart bar follows you around the menu." style="height:368px"><img src="../assets/lyc/flow-customer-08.webp" alt="Customer app, step 8: Add to cart" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">The cart bar follows you around the menu.</p></li><li class="fg-frame" style="left:2168px;top:70px;width:170px">
+            <span class="fg-name">09 &middot; Start a group order</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-09.webp" data-cap="Customer app: Start a group order. Budget per person, event date and a deadline." style="height:368px"><img src="../assets/lyc/flow-customer-09.webp" alt="Customer app, step 9: Start a group order" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Budget per person, event date and a deadline.</p></li><li class="fg-frame" style="left:2434px;top:126px;width:170px">
+            <span class="fg-name">10 &middot; Check out</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-10.webp" data-cap="Customer app: Check out. Several restaurants, one payment." style="height:368px"><img src="../assets/lyc/flow-customer-10.webp" alt="Customer app, step 10: Check out" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Several restaurants, one payment.</p></li><li class="fg-frame" style="left:2700px;top:70px;width:170px">
+            <span class="fg-name">11 &middot; Track the order</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-customer-11.webp" data-cap="Customer app: Track the order. Live status for every kitchen." style="height:368px"><img src="../assets/lyc/flow-customer-11.webp" alt="Customer app, step 11: Track the order" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Live status for every kitchen.</p></li></ol>
+          </div></div><div class="fg-canvas" data-p="restaurant" tabindex="0" aria-label="Restaurant app flow, scroll sideways">
+          <div class="fg-board" style="width:2434px;height:644px">
+            <svg class="fg-wires" width="2434" height="644" aria-hidden="true"><defs><marker id="fgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0D99FF"/></marker></defs><circle cx="192" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M192,272.4 C252,272.4 244,273.20000000000005 304,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="458" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M458,328.4 C518,328.4 510,217.20000000000002 570,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="724" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M724,272.4 C784,272.4 776,273.20000000000005 836,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="990" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M990,328.4 C1050,328.4 1042,217.20000000000002 1102,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="1256" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1256,272.4 C1316,272.4 1308,273.20000000000005 1368,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="1522" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1522,328.4 C1582,328.4 1574,217.20000000000002 1634,217.20000000000002" marker-end="url(#fgArrow)"/><circle cx="1788" cy="272.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M1788,272.4 C1848,272.4 1840,273.20000000000005 1900,273.20000000000005" marker-end="url(#fgArrow)"/><circle cx="2054" cy="328.4" r="5" class="fg-hot"/><path class="fg-noodle" d="M2054,328.4 C2114,328.4 2106,217.20000000000002 2166,217.20000000000002" marker-end="url(#fgArrow)"/></svg>
+            <ol class="fg-frames"><li class="fg-frame" style="left:40px;top:70px;width:170px">
+            <span class="fg-start" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 2l7 4-7 4z"/></svg>Flow starting point</span><span class="fg-name">01 &middot; Meet the app</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-01.webp" data-cap="Restaurant app: Meet the app. Handle orders without the hassle." style="height:368px"><img src="../assets/lyc/flow-restaurant-01.webp" alt="Restaurant app, step 1: Meet the app" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Handle orders without the hassle.</p></li><li class="fg-frame" style="left:306px;top:126px;width:170px">
+            <span class="fg-name">02 &middot; Register</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-02.webp" data-cap="Restaurant app: Register. Name, phone and email, verified." style="height:368px"><img src="../assets/lyc/flow-restaurant-02.webp" alt="Restaurant app, step 2: Register" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Name, phone and email, verified.</p></li><li class="fg-frame" style="left:572px;top:70px;width:170px">
+            <span class="fg-name">03 &middot; Set the location</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-03.webp" data-cap="Restaurant app: Set the location. Where the kitchen delivers from." style="height:368px"><img src="../assets/lyc/flow-restaurant-03.webp" alt="Restaurant app, step 3: Set the location" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Where the kitchen delivers from.</p></li><li class="fg-frame" style="left:838px;top:126px;width:170px">
+            <span class="fg-name">04 &middot; Complete the profile</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-04.webp" data-cap="Restaurant app: Complete the profile. A checklist that gets the restaurant live." style="height:368px"><img src="../assets/lyc/flow-restaurant-04.webp" alt="Restaurant app, step 4: Complete the profile" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">A checklist that gets the restaurant live.</p></li><li class="fg-frame" style="left:1104px;top:70px;width:170px">
+            <span class="fg-name">05 &middot; Build the menu</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-05.webp" data-cap="Restaurant app: Build the menu. Categories, dishes and prices." style="height:368px"><img src="../assets/lyc/flow-restaurant-05.webp" alt="Restaurant app, step 5: Build the menu" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Categories, dishes and prices.</p></li><li class="fg-frame" style="left:1370px;top:126px;width:170px">
+            <span class="fg-name">06 &middot; See new orders</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-06.webp" data-cap="Restaurant app: See new orders. Each order waits for the kitchen to approve it." style="height:368px"><img src="../assets/lyc/flow-restaurant-06.webp" alt="Restaurant app, step 6: See new orders" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Each order waits for the kitchen to approve it.</p></li><li class="fg-frame call" style="left:1636px;top:70px;width:170px">
+            <span class="fg-name">07 &middot; Accept or decline</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-07.webp" data-cap="Restaurant app: Accept or decline. Within the restaurant's own window, with a reason if it says no." style="height:368px"><img src="../assets/lyc/flow-restaurant-07.webp" alt="Restaurant app, step 7: Accept or decline" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Within the restaurant's own window, with a reason if it says no.</p><a class="fl-call" href="#let-each-restaurant-set"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg>A call I made</a></li><li class="fg-frame" style="left:1902px;top:126px;width:170px">
+            <span class="fg-name">08 &middot; Order history</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-08.webp" data-cap="Restaurant app: Order history. Every past order, with items and delivery details." style="height:368px"><img src="../assets/lyc/flow-restaurant-08.webp" alt="Restaurant app, step 8: Order history" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Every past order, with items and delivery details.</p></li><li class="fg-frame" style="left:2168px;top:70px;width:170px">
+            <span class="fg-name">09 &middot; Connect Square</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-restaurant-09.webp" data-cap="Restaurant app: Connect Square. Menus and orders sync with the till." style="height:368px"><img src="../assets/lyc/flow-restaurant-09.webp" alt="Restaurant app, step 9: Connect Square" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Menus and orders sync with the till.</p></li></ol>
+          </div></div><div class="fg-canvas" data-p="admin" tabindex="0" aria-label="Admin panel flow, scroll sideways">
+          <div class="fg-board" style="width:3092px;height:506px">
+            <svg class="fg-wires" width="3092" height="506" aria-hidden="true"><defs><marker id="fgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0D99FF"/></marker></defs><circle cx="362" cy="203.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M362,203.10000000000002 C422,203.10000000000002 414,210.8 474,210.8" marker-end="url(#fgArrow)"/><circle cx="798" cy="247.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M798,247.10000000000002 C858,247.10000000000002 850,166.8 910,166.8" marker-end="url(#fgArrow)"/><circle cx="1234" cy="203.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M1234,203.10000000000002 C1294,203.10000000000002 1286,210.8 1346,210.8" marker-end="url(#fgArrow)"/><circle cx="1670" cy="247.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M1670,247.10000000000002 C1730,247.10000000000002 1722,166.8 1782,166.8" marker-end="url(#fgArrow)"/><circle cx="2106" cy="203.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M2106,203.10000000000002 C2166,203.10000000000002 2158,210.8 2218,210.8" marker-end="url(#fgArrow)"/><circle cx="2542" cy="247.10000000000002" r="5" class="fg-hot"/><path class="fg-noodle" d="M2542,247.10000000000002 C2602,247.10000000000002 2594,166.8 2654,166.8" marker-end="url(#fgArrow)"/></svg>
+            <ol class="fg-frames"><li class="fg-frame" style="left:40px;top:70px;width:340px">
+            <span class="fg-start" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 2l7 4-7 4z"/></svg>Flow starting point</span><span class="fg-name">01 &middot; Dashboard</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-01.webp" data-cap="Admin panel: Dashboard. Today's orders, revenue and orders nobody has picked up." style="height:242px"><img src="../assets/lyc/flow-admin-01.webp" alt="Admin panel, step 1: Dashboard" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Today's orders, revenue and orders nobody has picked up.</p></li><li class="fg-frame" style="left:476px;top:114px;width:340px">
+            <span class="fg-name">02 &middot; Manage restaurants</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-02.webp" data-cap="Admin panel: Manage restaurants. Each restaurant's menu, category by category." style="height:242px"><img src="../assets/lyc/flow-admin-02.webp" alt="Admin panel, step 2: Manage restaurants" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Each restaurant's menu, category by category.</p></li><li class="fg-frame" style="left:912px;top:70px;width:340px">
+            <span class="fg-name">03 &middot; Follow every order</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-03.webp" data-cap="Admin panel: Follow every order. Status timeline, payment and delivery details." style="height:242px"><img src="../assets/lyc/flow-admin-03.webp" alt="Admin panel, step 3: Follow every order" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Status timeline, payment and delivery details.</p></li><li class="fg-frame" style="left:1348px;top:114px;width:340px">
+            <span class="fg-name">04 &middot; Look up a customer</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-04.webp" data-cap="Admin panel: Look up a customer. Profile, lifetime spend and recent orders." style="height:242px"><img src="../assets/lyc/flow-admin-04.webp" alt="Admin panel, step 4: Look up a customer" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Profile, lifetime spend and recent orders.</p></li><li class="fg-frame" style="left:1784px;top:70px;width:340px">
+            <span class="fg-name">05 &middot; Edit the content</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-05.webp" data-cap="Admin panel: Edit the content. Homepage banners, FAQs and policy pages." style="height:242px"><img src="../assets/lyc/flow-admin-05.webp" alt="Admin panel, step 5: Edit the content" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Homepage banners, FAQs and policy pages.</p></li><li class="fg-frame" style="left:2220px;top:114px;width:340px">
+            <span class="fg-name">06 &middot; Pay restaurants</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-06.webp" data-cap="Admin panel: Pay restaurants. Pending payouts and transfers for each restaurant." style="height:242px"><img src="../assets/lyc/flow-admin-06.webp" alt="Admin panel, step 6: Pay restaurants" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Pending payouts and transfers for each restaurant.</p></li><li class="fg-frame call" style="left:2656px;top:70px;width:340px">
+            <span class="fg-name">07 &middot; Read the numbers</span>
+            <button type="button" class="fg-shot" data-full="../assets/lyc/flow-admin-07.webp" data-cap="Admin panel: Read the numbers. Revenue trend and customer growth." style="height:242px"><img src="../assets/lyc/flow-admin-07.webp" alt="Admin panel, step 7: Read the numbers" loading="lazy" decoding="async"></button>
+            <p class="fg-cap">Revenue trend and customer growth.</p><a class="fl-call" href="#count-money-from-our-own-records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg>A call I made</a></li></ol>
+          </div></div></div>
+  </section>
+  <section id="designs" class="gal">
+    <h2 class="label"><span class="grad">From the design file</span></h2>
+    <p class="gal-lede">Screens from the Love Ya Figma file. Tap any screen to see it larger.</p>
+    <h3 class="gal-h"><span>Customer app</span> From browsing to the receipt</h3>
+    <ol class="gal-strip cust"><li><button class="gal-shot" type="button" data-full="../assets/lyc/c1-browse.webp" data-cap="Browse: Popular categories and local caterers.">
+        <span class="gal-n">01</span><img src="../assets/lyc/c1-browse.webp" alt="Browse: Popular categories and local caterers." loading="lazy" decoding="async"></button>
+        <h4>Browse</h4><p>Popular categories and local caterers.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c2-filter.webp" data-cap="Filter by who owns it: Female-owned, Indigenous-owned or social enterprise.">
+        <span class="gal-n">02</span><img src="../assets/lyc/c2-filter.webp" alt="Filter by who owns it: Female-owned, Indigenous-owned or social enterprise." loading="lazy" decoding="async"></button>
+        <h4>Filter by who owns it</h4><p>Female-owned, Indigenous-owned or social enterprise.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c3-when.webp" data-cap="Pick the day: Date and time first, so menus match what can be delivered.">
+        <span class="gal-n">03</span><img src="../assets/lyc/c3-when.webp" alt="Pick the day: Date and time first, so menus match what can be delivered." loading="lazy" decoding="async"></button>
+        <h4>Pick the day</h4><p>Date and time first, so menus match what can be delivered.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c4-group.webp" data-cap="Group order: Invite the team, set a budget per person and a deadline.">
+        <span class="gal-n">04</span><img src="../assets/lyc/c4-group.webp" alt="Group order: Invite the team, set a budget per person and a deadline." loading="lazy" decoding="async"></button>
+        <h4>Group order</h4><p>Invite the team, set a budget per person and a deadline.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c5-cart.webp" data-cap="One cart, many kitchens: Several restaurants in a single order.">
+        <span class="gal-n">05</span><img src="../assets/lyc/c5-cart.webp" alt="One cart, many kitchens: Several restaurants in a single order." loading="lazy" decoding="async"></button>
+        <h4>One cart, many kitchens</h4><p>Several restaurants in a single order.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c6-checkout.webp" data-cap="Checkout: Delivery details, saved cards and discounts.">
+        <span class="gal-n">06</span><img src="../assets/lyc/c6-checkout.webp" alt="Checkout: Delivery details, saved cards and discounts." loading="lazy" decoding="async"></button>
+        <h4>Checkout</h4><p>Delivery details, saved cards and discounts.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c7-track.webp" data-cap="Track it: Each restaurant's status, side by side.">
+        <span class="gal-n">07</span><img src="../assets/lyc/c7-track.webp" alt="Track it: Each restaurant's status, side by side." loading="lazy" decoding="async"></button>
+        <h4>Track it</h4><p>Each restaurant's status, side by side.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/c8-receipt.webp" data-cap="Receipt: One receipt for the whole order.">
+        <span class="gal-n">08</span><img src="../assets/lyc/c8-receipt.webp" alt="Receipt: One receipt for the whole order." loading="lazy" decoding="async"></button>
+        <h4>Receipt</h4><p>One receipt for the whole order.</p></li></ol>
+    <h3 class="gal-h"><span>Restaurant app</span> Running the day&rsquo;s orders</h3>
+    <ol class="gal-strip rest"><li><button class="gal-shot" type="button" data-full="../assets/lyc/r1-dashboard.webp" data-cap="Today at a glance: New, in-progress, ready and completed orders.">
+        <span class="gal-n">01</span><img src="../assets/lyc/r1-dashboard.webp" alt="Today at a glance: New, in-progress, ready and completed orders." loading="lazy" decoding="async"></button>
+        <h4>Today at a glance</h4><p>New, in-progress, ready and completed orders.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/r2-orders.webp" data-cap="Accept orders: Incoming orders waiting for approval.">
+        <span class="gal-n">02</span><img src="../assets/lyc/r2-orders.webp" alt="Accept orders: Incoming orders waiting for approval." loading="lazy" decoding="async"></button>
+        <h4>Accept orders</h4><p>Incoming orders waiting for approval.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/r3-status.webp" data-cap="Order status: From pending to ready, then assign a delivery partner.">
+        <span class="gal-n">03</span><img src="../assets/lyc/r3-status.webp" alt="Order status: From pending to ready, then assign a delivery partner." loading="lazy" decoding="async"></button>
+        <h4>Order status</h4><p>From pending to ready, then assign a delivery partner.</p></li><li><button class="gal-shot" type="button" data-full="../assets/lyc/r4-menu.webp" data-cap="Menu manager: Categories, items and availability toggles.">
+        <span class="gal-n">04</span><img src="../assets/lyc/r4-menu.webp" alt="Menu manager: Categories, items and availability toggles." loading="lazy" decoding="async"></button>
+        <h4>Menu manager</h4><p>Categories, items and availability toggles.</p></li></ol>
+    <h3 class="gal-h"><span>Website</span> Explaining the model to new customers</h3>
+    <ul class="gal-webs"><li><button class="gal-web" type="button" data-full="../assets/lyc/w1-one-order.webp" data-cap="Website: Different restaurants, one order">
+        <span class="gal-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="../assets/lyc/w1-one-order.webp" alt="Love Ya website section: Different restaurants, one order" loading="lazy" decoding="async"></button>
+        <p>Different restaurants, one order</p></li><li><button class="gal-web" type="button" data-full="../assets/lyc/w2-craving.webp" data-cap="Website: From craving to checkout">
+        <span class="gal-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="../assets/lyc/w2-craving.webp" alt="Love Ya website section: From craving to checkout" loading="lazy" decoding="async"></button>
+        <p>From craving to checkout</p></li><li><button class="gal-web" type="button" data-full="../assets/lyc/w3-tell-us.webp" data-cap="Website: Tell us which restaurants you love">
+        <span class="gal-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="../assets/lyc/w3-tell-us.webp" alt="Love Ya website section: Tell us which restaurants you love" loading="lazy" decoding="async"></button>
+        <p>Tell us which restaurants you love</p></li></ul>
+    <dialog class="lightbox" aria-label="Screen preview"><button class="lb-x" type="button" aria-label="Close">&times;</button><img alt=""><p class="lb-cap"></p></dialog>
   </section>
   <section id="calls">
     <h2 class="label"><span class="grad">Calls I made</span></h2>
     <div class="calls">
-        <article class="call" id="keep-analytics-honest-ga-for-traffic">
-          <h3>Keep analytics honest: GA for traffic, the database for revenue</h3>
-          <dl class="cdw"><div><dt>Context</dt><dd>The founder would soon be quoting order and revenue numbers to funders and partners.</dd></div><div><dt>Decision</dt><dd>Use Google Analytics only on the marketing site and the first part of the order funnel. Orders, revenue and GMV come from our own database, and the admin dashboard isn't tracked by Google at all.</dd></div><div><dt>Why</dt><dd>GA and the finance books never reconcile. Two sources for the same number lose trust faster than having no dashboard.</dd></div></dl>
+        <article class="call" id="count-money-from-our-own-records">
+          <h3>Count money from our own records, not Google</h3>
+          <dl class="cdw"><div><dt>Context</dt><dd>The founder was about to share order and sales numbers with funders and partners.</dd></div><div><dt>Decision</dt><dd>Use Google Analytics only to count website visits. Take order and sales numbers from our own database.</dd></div><div><dt>Why</dt><dd>Google's numbers never match the accounts. If two places show different totals, nobody trusts either.</dd></div></dl>
         </article>
-        <article class="call" id="restaurants-set-their-own-acceptance-window">
-          <h3>Restaurants set their own acceptance window and delivery radius</h3>
-          <dl class="cdw"><div><dt>Context</dt><dd>Feedback from the first restaurants showed that one platform-wide default didn't suit small kitchens or bigger caterers.</dd></div><div><dt>Decision</dt><dd>Move both settings into each restaurant's profile, with an admin override per restaurant.</dd></div><div><dt>Why</dt><dd>Partners stay in control of what they can deliver, which means fewer declined and late orders.</dd></div></dl>
+        <article class="call" id="let-each-restaurant-set">
+          <h3>Let each restaurant set its own time and distance limits</h3>
+          <dl class="cdw"><div><dt>Context</dt><dd>One rule for every restaurant didn't work. Small kitchens and big caterers needed different limits.</dd></div><div><dt>Decision</dt><dd>Each restaurant sets how long it has to accept an order and how far it delivers. Admin can change it if needed.</dd></div><div><dt>Why</dt><dd>Restaurants only take orders they can handle, so fewer orders get turned down or arrive late.</dd></div></dl>
         </article>
-        <article class="call" id="triage-feedback-by-launch-risk">
-          <h3>Triage feedback by launch risk, not by who raised it</h3>
-          <dl class="cdw"><div><dt>Context</dt><dd>Feedback was coming in from the client, internal reviews and partner testing all at once.</dd></div><div><dt>Decision</dt><dd>One feedback register, with each item rewritten as a clear issue and recommendation and ranked High (before launch), Medium (next sprint) or Low (backlog).</dd></div><div><dt>Why</dt><dd>The team always knew what blocked launch and what could wait.</dd></div></dl>
+        <article class="call" id="fix-what-blocks-the-launch-first">
+          <h3>Fix what blocks the launch first</h3>
+          <dl class="cdw"><div><dt>Context</dt><dd>Feedback was coming from the client, our own reviews and restaurant testing, all at once.</dd></div><div><dt>Decision</dt><dd>Put it all in one list, write each item clearly, and rank it: fix before launch, fix next sprint, or fix later.</dd></div><div><dt>Why</dt><dd>Everyone knew what had to be fixed before launch and what could wait.</dd></div></dl>
         </article>
-        <article class="call" id="launch-with-53-analytics-events">
-          <h3>Launch with 53 analytics events, not 129</h3>
-          <dl class="cdw"><div><dt>Context</dt><dd>The first tracking plan covered every screen and tap across the customer, restaurant and admin apps, and another team was implementing it.</dd></div><div><dt>Decision</dt><dd>Ship with the 53 events that answer launch questions, move 55 to Phase 2 and drop 21 as over-tracking.</dd></div><div><dt>Why</dt><dd>A smaller plan gets implemented correctly, and every launch number has one clear event behind it.</dd></div></dl>
+        <article class="call" id="track-53-things-at-launch">
+          <h3>Track 53 things at launch, not 129</h3>
+          <dl class="cdw"><div><dt>Context</dt><dd>The first tracking plan recorded almost every tap in all three apps, and another team had to build it.</dd></div><div><dt>Decision</dt><dd>Launch with the 53 events that answer real questions. Move 55 to later and drop 21 we didn't need.</dd></div><div><dt>Why</dt><dd>A short list gets built correctly, and every launch number comes from one clear source.</dd></div></dl>
         </article>
     </div>
   </section>
@@ -117,7 +265,7 @@
       <a href="https://www.linkedin.com/in/saaaagar/" target="_blank" rel="noopener">LinkedIn<span class="sr"> (opens in a new tab)</span></a>
       <a href="../assets/Sagar-Soni-Resume.pdf" target="_blank" rel="noopener">Resume<span class="sr"> (PDF, opens in a new tab)</span></a>
     </div>
-    <div class="legal"><span>&copy; 2026 Sagar Soni</span><span>Product screens on this site are illustrative recreations, not client assets.</span></div>
+    <div class="legal"><span>&copy; 2026 Sagar Soni</span><span>Product screens are illustrative recreations unless marked as from a design file.</span></div>
   </div>
 </footer>
 <script src="../assets/site.js"></script>
